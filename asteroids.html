@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Asteroids</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HTML.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <a href="index.html">Back to the Homepage</a>
+
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Asteroids</div>
+      </div>
+    </div>
+
+    <p>
+    This is a version of Asteroids that I made for one of my classes. It is almost identical to the version on my <a href="https://github.com/connorMcA/Asteroids">GitHub</a> but that one was made in MonoGame and this was made in Unity. It varies from the normal Asteroids in that at the beginning you can choose a different fire mode for the ship. Currently I am working on adding a highscore feature to keep track of the top 10 scores. Feel free to email me with any suggestions or bugs!
+    </p>
+  </body>
+</html>

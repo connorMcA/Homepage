@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" content=/>
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+
+		<title>The World of Dachshund Racing</title>
+	</head>
+    
+    <body>
+        
+        <nav >
+            <ul class="navbar" id="myNavbar">
+                <li><a href="index.html"  id="current">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="references.html">REFERENCES</a></li>
+            </ul>
+        </nav>
+        
+        <div class="titlePage">
+            <h1 class="title">DACHSHUND RACING</h1>
+
+        </div>
+        
+        <div class="about content">
+            <h2>ABOUT</h2>
+            <p>Dachshund racing is not what you would imagine of when you think of animal racing. The first things that come to mind would be horses or greyhounds. These weiner dogs offer something that those other kinds of races do not: a good laugh. While some of the small dogs take the racing very seriously, sprinting for the entire short distance of 25-50 meters, some stop to smell their neighbor and just slowly walk down the track. The few dogs that take it seriously even have a chance to make it to the annual national race in December in San Diego, California. The races themselves are fun because there is a little something for everyone. It is a light-hearted event that is fun for the whole family yet it still can get intense as people get very into the races. They also do not allow betting at these races and any proceeds that they would have gotten go to some charitbale organization.</p>
+            
+            <div class="videoWrapper">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/DzenlPYqJlc" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br/>
+            <p>Along with these races there are often costume contests for the best dressed dachshund. Some people dress their dogs up with little jockeys on their back like a small horse. Others dress their dogs up as bikers or race car drivers or even Waldo. Some go even farther and create vehicles that rest on their dog so they look like a train car or even a nuclear missile.</p>
+            <br/>
+            <p>Despite the fun that Dachshund racing can provide the Dachshund Club of America is opposed to these races because it can pose a risk to the breed, encouraging people to breed dachshunds to be better racers, even though the competitions are merely for fun. They also say it has potential to cause the dogs spinal problems which they are already prone to. Despite this opposition though the races continue to go on in most places. </p>
+            
+            <span class="links"><br/>To find out about upcoming events in your area, check out the <a href="events.html">Events Page</a><br/>For more information on how this crazy racing got started check out the <a href="history.html">History Page</a></span> 
+        </div>
+        
+        <footer>
+            <p>Copyright &copy; Connor McAuliffe | <a href="../index.html">My Homepage</a> | Thanks for stopping by!</p>
+            
+        </footer>
+        
+        <script>
+        
+            window.onscroll = function() {myFunction()};
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                var logo = document.getElementById("logo");
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    navbar.className  = "navbar" + " otherNav";
+                    logo.className = "image" + " show";
+                } else {
+                    navbar.className = navbar.className.replace(" otherNav", "");
+                    logo.className = logo.className.replace(" show", "");
+                }
+                
+                
+            }
+            
+            
+        </script>
+
+    
+    </body>
+    
+
+    
+    
+</html>

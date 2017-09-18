@@ -1,0 +1,270 @@
+:root{
+    --main-bg-color: rgb(120, 156, 169);
+    --box-primary-background: white;
+    --box-secondary-background: #bbbbbb;
+    --primary-color:  rgb(152, 0, 32);
+    --secondary-color: rgb(120, 156, 169);
+    
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav{
+    position: absolute;
+    top: 255px;
+    left:2%;
+}
+
+.topNav{
+    overflow: auto;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 2%;
+    color:lightgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 2;
+    backface-visibility: hidden;
+    background-color: var(--box-secondary-background);
+    border-bottom: 10px solid;
+    border-color: var(--primary-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.hidden{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+}
+
+.home{
+    display: inline-block;
+    background-color: var(--box-primary-background);
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    border-bottom: 10px solid;
+    border-color: var(--primary-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+#name{
+    margin-top: 0;
+    font-size: 115px;
+    line-height: 115px;
+    margin-bottom: 30px;
+    width: 100%;
+    position: absolute 300px 300px;
+}
+img {
+    border-bottom-right-radius: 7px;
+    float: right;
+    width: 300px;
+    height: 300px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: helvetica, "Trebuchet MS";
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0;
+    
+}
+
+
+.left{
+    float: left;
+    width: 66%;
+    margin: auto;
+
+}
+.right{
+    margin: auto;
+    width: 33%;
+    float: right;
+     
+}
+#resume, #personal, #other, #education, #statements, #projects, #welcome{
+    padding-left: 10px;
+    background-color: var(--box-primary-background);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    line-height: normal;
+    
+
+}
+#personal, #other{
+    background: var(--box-secondary-background);
+    padding:15px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    
+}
+a{
+    margin-top: 30px;
+    padding-right: 25px;
+    font-size: 30px;
+    color: black;
+    
+    
+}
+a:visited{
+    color: lightgray;
+}
+a:hover{
+    color: darkgray;
+}
+
+p{
+    padding-top: 0;
+    margin-top: 0px;
+    max-width: 90%;
+}
+
+#pdf{
+    font-size: 15px;
+    margin-top: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0px;
+    
+}
+.left h1, .left h2, .left h3, .left h4, .left h5, .left h6{
+    color: var(secondary-color);
+}
+h4 {
+    width: 100%;
+}
+ul{
+   list-style-type: none;
+}
+mainlists >li{
+    text-indent: -20px;
+}
+#skills{
+    margin:5px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#computers, #activities{
+    width: 30%;
+    float: left;
+}
+#hobbies{
+    display: inline-block;
+    width: 30%;
+}
+hr{
+    margin-left: 0px;
+    width: 95%;
+    height: 2px;
+    background: #707070;
+}
+#experienceList > dt{
+    width: 40%;
+    display: block;
+    float: left;  
+}
+#experienceList > dd{
+    width: 50%;
+    margin-right: 10%;
+    margin-left: 40%;
+    padding-bottom: 15px;
+    
+}
+.date{
+    color: #909090;
+    font-size: .9em;
+}
+#leftTable, #rightTable{
+    padding-bottom: 5px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+#leftTable{
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+#rightTable{
+    width: 45%;
+    float: right;
+    margin-right: 10%;
+}
+th, td {
+    border-bottom: 2px solid #ddd;
+    border-collapse: collapse;
+}
+.firstRow{
+    height: 60px;
+}
+.info{
+    padding-left: 30px;
+}
+.toTop{
+    font-size: 1em;
+    display:inline-block;
+    margin-top: 0%;
+    margin-bottom: 15px;
+    width: 40%;
+    padding-top: 10px;
+}
+
+iframe{
+	width: 100%;
+}
+
+.project{
+    font-size: 20px;
+}
+
+.medialink{
+    display: flex;
+    float:left;
+    margin-right: 100%;
+    margin-bottom: 15px;
+}
+
+.medialink img{
+    padding-top: 0px;
+    width: 20px;
+    height: 20px;
+}
+.medialink a{
+    padding-left: 0px;
+    float: left;
+    padding-right: 10px;
+    display: inline-block;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+
+.contactMe h4{
+    padding-right: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+
+.contactMe p{
+    margin-top: 0px;
+}
+
+
+
