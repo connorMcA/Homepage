@@ -3,28 +3,80 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href="css/testStyles.css" rel="stylesheet" />
 	<title>Connor McAullife Homepage</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
+
 </head>
 <body scroll="no" style="overflow:hidden;">
 <div class="titlePage">
-    <h1 class="title">CONNOR MCAULIFFE</h1>
-    <div class="Newleft">
-        <div class="newSection">
-                <h2>Projects</h2>
-
-                <ul id="projects">
-                	<li><a class="project" href="dachshund/index.html">Dachshund Racing</a></li>
-                	<li><a class="project" href="asteroids.html">Asteroids</a></li>
-                	<li><a class="project" href="https://www.github.com/connorMcA">My GitHub</a></li>
-                        <li><a class="project" href="media/Resume.pdf">Resume</a></li>
+        <h1 class="title">CONNOR MCAULIFFE</h1>
+        <div class="Newleft" >
+                <ul id="left">
+                        <li><h2 onclick="changeRight('aboutMe')">About Me</h2></li>
+                        <li><h2 onclick="changeRight('projects')">Projects</h2><li>
+                        <li><h2 onclick="changeRight('skills')">Skills</h2></li>
+                        <li><h2 onclick="changeRight('contactMe')">Contact Me</h2></li>
                 </ul>
         </div>
-    </div>
 
+        <div class="newRight" id="right">
+            <div id="aboutMe" class="show">
+                    <h2>Welcome</h2>
+                    <p>Welcome to my website. This is a place to show what I&#39;ve done, what I&#39;m doing, and what I&#39;m into. Thanks for stopping by.</p>
+            </div>
+
+            <div id="projects" class="hidden">
+                    <h2>Projects</h2>
+                    <ul id="projects">
+                            <li><a class="project" href="dachshund/index.html">Dachshund Racing</a></li>
+                            <li><a class="project" href="asteroids.html">Asteroids</a></li>
+                            <li><a class="project" href="https://www.github.com/connorMcA">My GitHub</a></li>
+                            <li><a class="project" href="media/Resume.pdf">Resume</a></li>
+                    </ul>
+            </div>
+
+            <div id="skills" class="hidden">
+                    <h2>Skills</h2>
+                    <div class="mainlists" id="list">
+                            <ul>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>HTML5 / CSS3</li>
+                                    <li>C/C++</li>
+                                    <li>C#</li>
+                                <li>MIPS Assembly</li>
+                                <li>Git</li>
+                                <li>Object Oriented Programming</li>
+                            </ul>
+                    </div>
+            </div>
+
+            <div id="contactMe" class="hidden">
+                        <h2>Contact Me</h2>
+
+                        <h4>Email:</h4>
+
+                        <p id="email" onclick="go_to_link(this)">cxm4176@g.rit.edu</p>
+
+                        <h4>Phone:</h4>
+
+                        <p>224-325-6933</p>
+
+                        <h4>Social Media</h4>
+
+                        <div class="medialink">
+                            <a class="notUnderline" href="https://www.linkedin.com/in/connor-mcauliffe/"><img src="media/LinkedIn-Logo.png" alt="linkedIn"/></a>
+                            <a class="notUnderline" href="https://www.facebook.com/connor.mcauliffe.3"><img src="media/fb-logo.png" alt="facebook"/></a>
+                            <a class="notUnderline" href="https://www.instagram.com/c0nn0r_mc4ul1ff3.c/"><img src="media/Instagram-logo.png" alt="instagram"/></a>
+
+                        </div>
+            </div>
+
+        </div>
 </div>
 
 <div class="left">
-        <div id="newSection">
+        <div>
                 <h2>Welcome</h2>
                 <hr />
                 <p>Welcome to my website. This is a place to show what I&#39;ve done, what I&#39;m doing, and what I&#39;m into. Thanks for stopping by.</p>
@@ -160,26 +212,6 @@
     <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/235846721&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     </div>
 </div>
-    <script>
-
-            window.onscroll = function() {myFunction()};
-            function myFunction() {
-                var navbar = document.getElementById("myNavbar");
-                if (document.body.scrollTop > 240 || document.documentElement.scrollTop > 240) {
-                    navbar.className  = "navbar" + " topNav";
-                } else {
-                    navbar.className = navbar.className.replace(" topNav", "");
-                }
-
-
-            }
-
-            function go_to_link(elem){
-                    window.open("mailto:cxm4176@g.rit.edu");
-            }
-
-
-    </script>
 
 </body>
 </html>

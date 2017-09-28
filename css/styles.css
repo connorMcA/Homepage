@@ -66,10 +66,10 @@ a:hover:before, #email:hover:before {
     border-bottom-right-radius: 20px;
 }
 .hidden{
-    visibility: hidden;
+    display:none;
 }
 .show{
-    visibility: visible;
+    display: inline-block;
 }
 
 .home{
@@ -92,7 +92,7 @@ a:hover:before, #email:hover:before {
     width: 100%;
     position: absolute 300px 300px;
     height: 255px;
-    
+
 }
 img {
     border-bottom-right-radius: 7px;
@@ -296,7 +296,7 @@ iframe{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-image: url(media/grafitti.jpg);
     min-height: 800px;
     position: relative;
@@ -317,5 +317,5 @@ iframe{
     padding: 15px;
     letter-spacing: 3px;
     color: white;
-    
+
 }
