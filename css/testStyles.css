@@ -7,15 +7,52 @@
 
 }
 
-a{
-    text-decoration: none;
+.titlePage {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-image: url(../media/grafitti.jpg);
+    min-height: 1000px;
+    width: 100%;
+    z-index: 1;
+
+
 }
 
-#navbar div{
-    position: relative;
-    width: 10%;
-    float: left;
-    margin-bottom: 10px;
+.title{
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    background: #333333;
+    padding: 15px;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 0;
+    
+}
+.Newleft{
+    width: 35%;
+    position:absolute;
+    top: 50%;
+    height: 0;
+    border-right: 150px solid transparent;
+    border-bottom: 500px solid white;
+    display: ineline-block;
+    
+}
+
+
+.newSection{
+    display:inline-block;
+}
+
+
+a{
+    text-decoration: none;
 }
 
 .nava{
@@ -44,26 +81,6 @@ a:hover:before, #email:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
-
-.topNav{
-    overflow: auto;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 2%;
-    color:lightgray;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 98%;
-    z-index: 2;
-    backface-visibility: hidden;
-    background-color: var(--box-secondary-background);
-    border-bottom: 10px solid;
-    border-color: var(--primary-color);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 .hidden{
     visibility: hidden;
@@ -106,8 +123,8 @@ img {
 body{
     background-color: var(--main-bg-color);
     font-family: helvetica, "Trebuchet MS";
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0;
 
 }
@@ -115,14 +132,16 @@ body{
 
 .left{
     float: left;
-    width: 66%;
+    width: 64%;
     margin: auto;
+    margin-left: 2%;
 
 }
 .right{
     margin: auto;
-    width: 33%;
+    width: 31%;
     float: right;
+    margin-right: 2%;
 
 }
 #section, .section{
@@ -290,32 +309,4 @@ iframe{
     cursor: pointer;
     position: relative;
     width:140px;
-}
-
-.titlePage {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-image: url(media/grafitti.jpg);
-    min-height: 800px;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-
-
-}
-
-.title{
-    text-align: center;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    background: #333333;
-    padding: 15px;
-    letter-spacing: 3px;
-    color: white;
-    
 }
