@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href="css/testStyles.css" rel="stylesheet" />
 	<title>Connor McAullife Homepage</title>
+        <script type="text/javascript" src="main.js"></script>
 </head>
-<body>
+<body scroll="no" style="overflow:hidden;">
 <div class="titlePage">
     <h1 class="title">CONNOR MCAULIFFE</h1>
     <div class="Newleft">
         <div class="newSection">
                 <h2>Projects</h2>
 
-                <ul>
+                <ul id="projects">
                 	<li><a class="project" href="dachshund/index.html">Dachshund Racing</a></li>
-                	<li>&nbsp;<a class="project" href="asteroids.html">Asteroids</a></li>
-                	<li>&nbsp;&nbsp;<a class="project" href="https://www.github.com/connorMcA">My GitHub</a></li>
-                    <li>&nbsp;&nbsp;&nbsp;<a class="project" href="media/Resume.pdf">Resume</a></li>
+                	<li><a class="project" href="asteroids.html">Asteroids</a></li>
+                	<li><a class="project" href="https://www.github.com/connorMcA">My GitHub</a></li>
+                        <li><a class="project" href="media/Resume.pdf">Resume</a></li>
                 </ul>
         </div>
     </div>
-   
+
 </div>
 
 <div class="left">
@@ -30,7 +31,7 @@
                 <ul><li><a class="project" href="media/Resume.pdf">Resume</a></li></ul>
         </div>
 
-        <div id="section">
+        <div class="section">
                 <h2>Projects</h2>
                 <hr />
 
@@ -41,32 +42,32 @@
                 </ul>
         </div>
 
-        <div id="section">
+        <div class="section">
                 <h2>Experience</h2>
 
 
                 <hr />
-                <dl id="">
+                <dl>
                 	<dt><strong>HealthNet</strong>, Team Project -
-                	<em>Head Developer</em><br />
-                	<span class="date">January  2017 - May 2017</span></dt>
+                	<em>Head Developer</em></dt>
+                	<dt><span class="date">January  2017 - May 2017</span></dt>
                 	<dd>Developed and managed a web-based healthcare program using Python and Django for a hypothetical hospital network. Designed the project structure using uml diagrams and design patterns. Lead the team in meeting deadlines while maintaining product quality for releases. </dd>
-                    <br />
+                    <dt></dt>
                 	<dt><strong>RIT</strong>, Rochester, New York -
-                	<em>Supplemental Lab Instructor</em><br />
-                	<span class="date">August  2016 - PRESENT</span></dt>
+                	<em>Supplemental Lab Instructor</em></dt>
+                	<dt><span class="date">August  2016 - PRESENT</span></dt>
                 	<dd>Worked alongside professors teaching introductory computer science courses where students learn Python, Java, and get a look at in-depth algorithms and logic. Graded and debugged students labs and projects as well as mentored students in the computer science tutor center.</dd>
-                    <br />
+                    <dt></dt>
                     <dt><strong>One Life Maps</strong>, Bartlett, Illinois -
-                	<em>Front End Web Developer</em><br />
-                	<span class="date">May 2017 - August 2017</span></dt>
+                	<em>Front End Web Developer</em></dt>
+                	<dt><span class="date">May 2017 - August 2017</span></dt>
                 	<dd>Worked alongside professors teaching introductory computer science courses where students learn Python, Java, and get a look at in-depth algorithms and logic. Graded and debugged students labs and projects as well as mentored students in the computer science tutor center.</dd>
-                    <br />
+                        <dt></dt>
                 	<dt><strong>Westminster Christian School</strong>, Elgin, Illinois -
-                	<em>Summer Facility Manager</em><br />
-                	<span class="date">Summer 2015, 2016, 2017</span></dt>
+                	<em>Summer Facility Manager</em></dt>
+                	<dt><span class="date">Summer 2015, 2016, 2017</span></dt>
                 	<dd>Undertook multiple facets of facility maintenance throughout the campus. Led team of 4 and worked closely with school staff in order to assure tasks were getting done in a timely and effective manner.</dd>
-                    <br />
+                   <dt></dt>
                 </dl>
         </div>
 
@@ -85,10 +86,10 @@
                             <li>Object Oriented Programming</li>
                         </ul>
                 </div>
-            
+
         </div>
 
-        <div id="section">
+        <div class="section">
                 <h2>Education</h2>
                 <hr />
                 <dl>
@@ -126,9 +127,9 @@
         <h4>Social Media</h4>
 
         <div class="medialink">
-            <a class="notUnderline" href="https://www.linkedin.com/in/connor-mcauliffe/"><img src="media/LinkedIn-Logo.png" /></a>
-            <a class="notUnderline" href="https://www.facebook.com/connor.mcauliffe.3"><img src="media/fb-logo.png" /></a> 
-            <a class="notUnderline" href="https://www.instagram.com/c0nn0r_mc4ul1ff3.c/"><img src="media/Instagram-logo.png" /></a>
+            <a class="notUnderline" href="https://www.linkedin.com/in/connor-mcauliffe/"><img src="media/LinkedIn-Logo.png" alt="linkedIn"/></a>
+            <a class="notUnderline" href="https://www.facebook.com/connor.mcauliffe.3"><img src="media/fb-logo.png" alt="facebook"/></a>
+            <a class="notUnderline" href="https://www.instagram.com/c0nn0r_mc4ul1ff3.c/"><img src="media/Instagram-logo.png" alt="instagram"/></a>
 
         </div>
     </div>
@@ -172,13 +173,13 @@
 
 
             }
-        
+
             function go_to_link(elem){
                     window.open("mailto:cxm4176@g.rit.edu");
             }
 
 
     </script>
-    
+
 </body>
 </html>

@@ -11,7 +11,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-image: url(../media/grafitti.jpg);
     min-height: 1000px;
     width: 100%;
@@ -29,26 +29,28 @@
     -ms-transform:translate(-50%,-50%);
     background: #333333;
     padding: 15px;
+    padding-bottom: 10px;
     letter-spacing: 3px;
     color: white;
     margin-top: 0;
-    
+
 }
 .Newleft{
-    width: 30%;
+    width: 300px;
     position:absolute;
-    top: 50%;
+    top: 60%;
     height: 0;
     border-right: 150px solid transparent;
-    border-bottom: 500px solid white;
-    display: ineline-block;
-    
+    border-bottom: 500px solid #333333;
+    display: inline-block;
+    color: white;
 }
 
 
 .newSection{
     display:inline-block;
     margin-left: 2%;
+    color:inherit;
 }
 
 
@@ -110,7 +112,7 @@ a:hover:before, #email:hover:before {
     width: 100%;
     position: absolute 300px 300px;
     height: 255px;
-    
+
 }
 img {
     border-bottom-right-radius: 7px;
@@ -166,7 +168,7 @@ a{
     position:relative;
     margin-top: 30px;
     font-size: 30px;
-    color: black;
+    color: white;
 
 
 }
@@ -310,4 +312,9 @@ iframe{
     cursor: pointer;
     position: relative;
     width:140px;
+}
+body{
+        color:white;
+        font-weight:300;
+        letter-spacing: 2px;
 }
