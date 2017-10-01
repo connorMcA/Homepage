@@ -3,19 +3,20 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
 	<link href="css/testStyles.css" rel="stylesheet" />
 	<title>Connor McAullife Homepage</title>
+        
 </head>
 <body>
 <div class="titlePage">
     <h1 class="title">CONNOR MCAULIFFE</h1>
     <div class="Newleft">
-        <div class="newSection">
+        <div class="newSection" id="projects">
                 <h2>Projects</h2>
 
                 <ul>
                 	<li><a class="project" href="dachshund/index.html">Dachshund Racing</a></li>
-                	<li>&nbsp;<a class="project" href="asteroids.html">Asteroids</a></li>
-                	<li>&nbsp;&nbsp;<a class="project" href="https://www.github.com/connorMcA">My GitHub</a></li>
-                    <li>&nbsp;&nbsp;&nbsp;<a class="project" href="media/Resume.pdf">Resume</a></li>
+                	<li><a class="project" href="asteroids.html">Asteroids</a></li>
+                	<li><a class="project" href="https://www.github.com/connorMcA">My GitHub</a></li>
+                    <li><a class="project" href="media/Resume.pdf">Resume</a></li>
                 </ul>
         </div>
     </div>
@@ -159,10 +160,19 @@
     <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/235846721&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     </div>
 </div>
+    
     <script>
+            
+            var children = document.getElementByID("projects").children;
+            var childCount = children.length;
+            var indent = 10;
+            for(var i = 0; i < childCount; i++){
+                children[i].style.paddingLeft = indent +"px";
+                indent +=10;
+            }
 
-            window.onscroll = function() {myFunction()};
-            function myFunction() {
+            window.onscroll = function() {navBar()};
+            function navBar() {
                 var navbar = document.getElementById("myNavbar");
                 if (document.body.scrollTop > 240 || document.documentElement.scrollTop > 240) {
                     navbar.className  = "navbar" + " topNav";
@@ -171,7 +181,7 @@
                 }
 
 
-            }
+            }       
         
             function go_to_link(elem){
                     window.open("mailto:cxm4176@g.rit.edu");
@@ -179,6 +189,7 @@
 
 
     </script>
+
     
 </body>
 </html>
