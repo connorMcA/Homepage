@@ -17,12 +17,13 @@ html{
     position:absolute;
     top:50%;
     left:50%;
+    font-size: 4.9vh;
     transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
     background: #000;
     padding: 15px;
     padding-bottom: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: white;
     margin-top: 0;
     display: inline-block;
@@ -31,12 +32,12 @@ html{
 .Newleft{
     width: 300px;
     position:absolute;
-    top: 55%;
+    top: 46%;
     left: 0;
     height: 0;
     display: inline-block;
-    border-right: 150px solid transparent;
-    border-bottom: 600px solid #000;
+    border-right: 15vh solid transparent;
+    border-bottom: 56vh solid #000;
     padding-left: 0;
 }
 
@@ -47,11 +48,11 @@ html{
 .newRight{
         width: 285px;
         position:absolute;
-        top: 55%;
+        top: 46%;
         right:0;
         height: 0;
-        border-left: 150px solid transparent;
-        border-bottom: 600px solid #000;
+        border-left: 15vh solid transparent;
+        border-bottom: 56vh solid #000;
         text-align: right;
 }
 
@@ -59,9 +60,28 @@ html{
         text-align: right;
 }
 
+.fullRight{
+        border-bottom: 100vh solid #000;
+        border-left: 5vh solid transparent;
+        width: 285px;
+        position:absolute;
+        top: 0;
+        right:0;
+        height: 0;
+        text-align: right;
+}
+
+.fullRight h2{
+        text-align: right;
+}
+
 #right{
         padding-right: 2%;
         padding-left: 15px;
+        -webkit-transition: all .75s linear;
+        -moz-transition: all .75s linear;
+        -o-transition: all .75s linear;
+        transition: all .75s linear;
 }
 
 #aboutMe{

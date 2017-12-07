@@ -1,7 +1,14 @@
 function changeRight(id){
-        var rightDivs = document.getElementById('right').querySelectorAll("#right>div");
-
+        var right = document.getElementById('right');
+        var rightDivs = right.querySelectorAll("#right>div");
+        if (id == "aboutMe"){
+                right.className = "fullRight";
+        }
+        else{
+                right.className = "newRight";
+        }
         for(var i = 0; i < rightDivs.length; i++){
+
 
                 if(rightDivs[i].id == id){
                         rightDivs[i].className = "show";
@@ -10,7 +17,6 @@ function changeRight(id){
                         rightDivs[i].className = "hidden";
                 }
         }
-        console.log('here');
 }
 
 
