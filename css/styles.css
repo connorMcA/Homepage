@@ -78,21 +78,49 @@ html{
 #right{
         padding-right: 2%;
         padding-left: 15px;
-        -webkit-transition: all .75s linear;
-        -moz-transition: all .75s linear;
-        -o-transition: all .75s linear;
-        transition: all .75s linear;
+        -webkit-transition: all .5s linear;
+        -moz-transition: all .5s linear;
+        -o-transition: all .5s linear;
+        transition: all .5s linear;
 }
 
 #aboutMe{
     text-align: justify;
+    height: 100vh;
 }
 
-a, .Newleft h2{
-    width: 150px;
+.profilePic{
+        border-radius: 75px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+}
+
+a:not(.normal), .Newleft a{
     position:relative;
     color: white;
     text-decoration: none;
+    font-size: 25px;
+}
+.Newleft a:before{
+        content:"";
+        position: absolute;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+}
+
+.Newleft a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.Newleft a:hover{
+        cursor: pointer;
 }
 
 li{
@@ -101,6 +129,23 @@ li{
 
 .project{
     font-size: 20px;
+}
+
+.project:before{
+        content:"";
+        position: absolute;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+}
+
+.project:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 a:not(.notUnderline):before, .Newleft h2:before{
@@ -173,10 +218,12 @@ ul{
 }
 
 .medialink{
-    float:right;
-    position: relative;
-    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 5;
     margin-bottom: 15px;
+
 }
 
 .medialink img{
@@ -212,6 +259,14 @@ p{
 .asteroids{
     font-size: default;
     color: black;
-    width: 60%;
     margin: auto;
+}
+
+.asteroidsText{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 40%;
+        padding-right: 2%;
+        padding-left: 2%;
 }

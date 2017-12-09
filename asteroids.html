@@ -7,27 +7,36 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HTML.json", {onProgress: UnityProgress});
     </script>
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body style="background: white">
-    <a class="asteroids" href="index.html">Back to the Homepage</a>
+  <div class="asteroids">
 
-    
-    <p class="asteroids">
-    This is a version of Asteroids that I made for one of my classes. It is almost identical to the version on my <a class="asteroids" href="https://github.com/connorMcA/Asteroids">GitHub</a> but that one was made in MonoGame but this was made in Unity. It varies from the normal Asteroids in that at the beginning you can choose between several different fire modes. You move the ship with the arrow keys and fire with the space bar. Feel free to email me with any questions or bugs.
-    </p>
-      
-      <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="webgl-content game">
+      <div id="gameContainer" style="width: 100vh; height: 70vh"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
       </div>
     </div>
+    <div class="asteroidsText">
+    <a class="normal" href="index.html">Back to the Homepage</a>
 
+
+    <p class="asteroids">
+    This is a version of Asteroids that I made for one of my classes.
+    It is almost identical to the version on my
+    <a class="normal" href="https://github.com/connorMcA/Asteroids">GitHub</a>
+    but that one was made in MonoGame but this was made in Unity.
+    It varies from the normal Asteroids in that at the beginning you can choose between several different fire modes.
+    You move the ship with the arrow keys and fire with the space bar. Feel free to email me with any questions or bugs.
+    </p>
+    </div>
+</div>
   </body>
 </html>
