@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/QdUp.css" rel="stylesheet" />
+	<title>Q'dUp</title>
+        <script type="text/javascript" src="main.js"></script>
+
+
+</head>
+<body>
+        <div id="outsideText">
+        <h1>Q'dUp</h1>
+        <h3>Making Party DJing That Much Easier</h3>
+        </div>
+        <div class="phone">
+                <div id="toolbar">
+                        <a onclick="displayContent('main')" id="backButton" class="hidden"><</a>
+                </div>
+        <div id="phoneContents">
+
+        <div id="main" class="show">
+        <h3 class="mainTitle">Q'dUp</h3>
+        <div id="descriptionButton" class="button" onclick="displayContent('description')" >
+                <p>Description</p>
+        </div>
+        <div id="demoButton" class="button" onclick="displayContent('demo')">
+                <p>Demo</p>
+
+        </div>
+        <div id="githubButton" class="button" onclick="go_to_link('github')">
+                <p>Github</p>
+
+        </div>
+        <div id="plannedFeaturesButton" class="button" onclick="displayContent('plannedFeatures')">
+                <p>Planned Features</p>
+
+        </div>
+        </div>
+
+        <div id="description" class="hidden">
+        <h3 class="mainTitle">Description</h3>
+
+        <p>Q'dUp is an appplication that makes it easy for everyone to play the music they want to hear at the party.
+        One person simply hosts a queue on their phone and gets a code which they can give to their
+        friends who can then join and add to the queue. It's as simple as that.</p>
+
+        <p>The app is being developed in Java utilizing Spotify's API to search, access, and play songs.
+        The app currently allows users to both host and join a queue, being able to add songs in either case.
+        The host user also has the ability to rearrange the queue order, as well as remove songs.
+        In the works is migrating the backend server to be hosted on AWS and updating some frontend UI/UX.
+        We hope to release version 1.0.0 to the app store soon. </p>
+
+        </div>
+        <div id="demo" class="hidden">
+        <h3 class="mainTitle">Demo</h3>
+        <div class="container">
+        <iframe src="https://www.youtube.com/embed/YKRynlZJl0g?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div id="plannedFeatures" class="hidden">
+
+        <h3 class="mainTitle">Planned Features</h3>
+        <p>Guest</p>
+        <ul>
+                <li>Notification when the song the client added is played</li>
+                <li>Verification notification when the client adds a song</li>
+        </ul>
+        <p>Host</p>
+        <ul>
+                <li>Block clients</li>
+                <li>Invite clients</li>
+                <li>Chrome Cast the current queue</li>
+                <li>Save queue as playlist</li>
+        </ul>
+        <p>General</p>
+        <ul>
+                <li>Artist/Album pages</li>
+                <li>View own Spotify playlists to add songs from</li>
+        </ul>
+        </div>
+</div>
+</div>
+</body>
+
+
+</html>

@@ -1,15 +1,15 @@
 body{
         background-color: black;
         color: white;
-        text-align: center;
-        align-content: center;
         margin: auto;
         font-family: helvetica, "Trebuchet MS";
 }
 
-h3{
+#outsideText{
+        text-align: center;
         margin-bottom: 0px;
         padding-bottom: 0px;
+        color: springgreen;
 }
 
 .phone{
@@ -25,7 +25,7 @@ h3{
         margin: auto;
         position: relative;
 }
-.phoneContents{
+#phoneContents{
         text-align: left;
         width: 19vw;
         padding-left: 1vw;
@@ -42,7 +42,7 @@ h3{
 
 }
 
-.toolbar{
+#toolbar{
         z-index: 3;
         display: flex;
         text-align: left;
@@ -58,10 +58,17 @@ h3{
         background-color:  #545d5d;
 }
 
-.toolbar p{
+#toolbar a{
         padding-top: 5px;
         padding-left: 10px;
+        padding-right:20px;
         margin: 0;
+        font-size: large;
+
+}
+
+#toolbar a:hover{
+        cursor: pointer;
 }
 
 .container{
@@ -85,4 +92,35 @@ iframe{
 }
 .show{
     display: inline;
+}
+.mainTitle{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1vw;
+        color: springgreen;
+}
+
+.button{
+        width: 9.1vw;
+        margin-bottom: 1vw;
+        height: 9vw;
+        display: inline-block;
+        background-color:  #545d5d;
+
+}
+
+.button:hover{
+        cursor: pointer;
+}
+
+.button p{
+        position: relative;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        float: left;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        color: springgreen;
 }
