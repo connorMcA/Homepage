@@ -1,20 +1,6 @@
-html{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-image: url(../media/grafitti.jpg);
-    min-height: 1000px;
-    width: 100%;
-    z-index: 1;
-}
-
 .title{
     text-align: center;
-    position:absolute;
+    position:fixed;
     top:50%;
     left:50%;
     font-size: 4.9vh;
@@ -29,201 +15,19 @@ html{
     display: inline-block;
 }
 
-.Newleft{
-    width: 300px;
-    position:absolute;
-    top: 46%;
-    left: 0;
-    height: 0;
-    display: inline-block;
-    border-right: 15vh solid transparent;
-    border-bottom: 56vh solid #000;
-    padding-left: 0;
-}
-
-.Newleft h2:hover{
-        cursor:pointer;
-}
-
-.newRight{
-        width: 285px;
-        position:absolute;
-        top: 46%;
-        right:0;
-        height: 0;
-        border-left: 15vh solid transparent;
-        border-bottom: 56vh solid #000;
-        text-align: right;
-}
-
-.newRight h2{
-        text-align: right;
-}
-
-.fullRight{
-        border-bottom: 100vh solid #000;
-        border-left: 5vh solid transparent;
-        width: 285px;
-        position:absolute;
-        top: 0;
-        right:0;
-        height: 0;
-        text-align: right;
-}
-
-.fullRight h2{
-        text-align: right;
-}
-
-#right{
-        padding-right: 2%;
-        padding-left: 15px;
-        -webkit-transition: all .5s linear;
-        -moz-transition: all .5s linear;
-        -o-transition: all .5s linear;
-        transition: all .5s linear;
-}
-
-#aboutMe{
-    text-align: justify;
-    height: 100vh;
-}
-
 .profilePic{
+    position:fixed;
+    top:38%;
+    left:50%;
+    width: 20vh;
+    height: 20vh;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
         border-radius: 75px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-}
-
-a:not(.normal), .Newleft a{
-    position:relative;
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-}
-.Newleft a:before{
-        content:"";
-        position: absolute;
-        background-color: white;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-}
-
-.Newleft a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.Newleft a:hover{
-        cursor: pointer;
-}
-
-li{
-    margin-bottom: 5px;
-}
-
-.project{
-    font-size: 20px;
-}
-
-.project:before{
-        content:"";
-        position: absolute;
-        background-color: white;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-}
-
-.project:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-a:not(.notUnderline):before, .Newleft h2:before{
-    content:"";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 20;
-    background-color: awhite;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-a:hover:before, .Newleft h2:hover:before{
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-#email:before{
-        content:"";
-        position: absolute;
-        width: 47%;
-        height: 2px;
-        bottom: 0;
-        left: 20;
-        background-color: white;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-}
-
-#email:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.hidden{
-    display:none;
-}
-.show{
-    display: inline;
-}
-
-body{
-    background-color: black;
-    font-family: helvetica, "Trebuchet MS";
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    height: 100%;
-    color:white;
-}
-
-ul{
-   list-style-type: none;
-}
-
-
-#id{
-        width: 50%;
-        float: left;
-}
-
-.medialink{
-    position: fixed;
-    bottom: 0;
-    right: 20px;
-    z-index: 5;
-    margin-bottom: 15px;
-
+    border:10px solid black;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
 }
 
 .medialink img{
@@ -240,10 +44,8 @@ ul{
     margin-top: 0px;
 }
 
-#email{
-    cursor: pointer;
-    text-align: right;
-    position: relative;
+ul{
+   list-style-type: none;
 }
 
 h4 {
@@ -251,22 +53,285 @@ h4 {
     padding-bottom: 0px;
 }
 
-p{
-    padding-top: 0px;
+li{
+    margin-bottom: 5px;
+}
+
+body{
+    background-color: black;
+    font-family: helvetica, "Trebuchet MS";
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0;
+    color:white;
 }
 
-.asteroids{
-    font-size: default;
-    color: black;
-    margin: auto;
+#email{
+    cursor: pointer;
+    text-align: right;
+    position: relative;
 }
 
-.asteroidsText{
+.hidden{
+    display:none;
+}
+.show{
+    display:inline;
+}
+
+@media screen and (min-width:1050px){
+
+    html{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url(../media/grafitti.jpg);
+        min-height: 1000px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    p{
+        padding-top: 0px;
+        margin-top: 0;
+    }
+
+    .project{
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .LeftMenu{
+        width: 300px;
+        position:absolute;
+        bottom: 0%;
+        left: 0;
+        height: 0;
+        display: inline-block;
+        border-right: 15vh solid transparent;
+        border-bottom: 56vh solid #000;
+        padding-left: 0;
+    }
+
+    .LeftMenu h2:hover{
+            cursor:pointer;
+    }
+
+    .LeftMenu a:before{
+            content:"";
+            position: absolute;
+            background-color: white;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+    }
+
+    .LeftMenu a:hover{
+            cursor: pointer;
+    }
+
+    .newRight{
+            width: 285px;
+            position:absolute;
+            bottom: 0%;
+            right:0;
+            height: 0;
+            border-left: 15vh solid transparent;
+            border-bottom: 56vh solid #000;
+            text-align: right;
+    }
+
+    .fullRight{
+            border-bottom: 100vh solid #000;
+            border-left: 5vh solid transparent;
+            width: 285px;
+            position:absolute;
+            top: 0;
+            right:0;
+            height: 0;
+            text-align: right;
+    }
+
+    .medialink{
+        position: fixed;
+        bottom: 0;
+        left: 35px;
+        z-index: 5;
+        margin-bottom: 15px;
+
+    }
+
+    .asteroids{
+        font-size: default;
+        color: black;
+        margin: auto;
+    }
+
+    .asteroidsText{
+            position: absolute;
+            top: 10%;
+            right: 0;
+            width: 40%;
+            padding-right: 2%;
+            padding-left: 2%;
+    }
+
+    a:not(.normal), .LeftMenu a{
+        position:relative;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    a:not(.notUnderline):before, .LeftMenu h2:before, .project:before{
+        content:"";
         position: absolute;
-        top: 10%;
-        right: 0;
-        width: 40%;
-        padding-right: 2%;
-        padding-left: 2%;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    a:not(.notUnderline):before, .LeftMenu h2:before{
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 20;
+    }
+
+    a:hover:before, .LeftMenu h2:hover:before, .project:hover:before{
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    #right{
+            padding-right: 2%;
+            padding-left: 15px;
+    }
+
+    #aboutMe{
+        text-align: justify;
+    }
+
+    #aboutMe h2{
+        text-align: right;
+    }
+
+    #email:before{
+            content:"";
+            position: absolute;
+            width: 47%;
+            height: 2px;
+            bottom: 0;
+            left: 20;
+            background-color: white;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+    }
+
+    #email:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    #id{
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 1049px){
+
+    ul{
+       padding-top: 0;
+    }
+
+    .titlePage{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url(../media/grafitti.jpg);
+        min-height: 90vh;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .project{
+        color: white;
+        text-decoration: none;
+    }
+
+    .medialink{
+        position: relative;
+        top: 15vh;
+        left: 35px;
+        z-index: 5;
+        margin-bottom: 15px;
+
+    }
+
+    .LeftMenu{
+        width: 30%;
+        height: 42vh;
+        border-right: 10px solid white;
+        display: inline-block;
+        padding-top:20px;
+    }
+
+    .LeftMenu a{
+        position:relative;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .LeftMenu a:hover{
+            cursor: pointer;
+    }
+
+    .newRight{
+        position: absolute;
+        right: 3%;
+        width: 62%;
+        padding-top: 20px;
+        display: inline-block;
+        text-align: right;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 3%;
+        height: 42vh;
+    }
+
+    .newRight h2{
+        margin:0;
+        padding: 0;
+    }
+
+    #left{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
 }

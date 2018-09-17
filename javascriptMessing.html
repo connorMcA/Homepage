@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Mess Around</title>
+        <script type="text/javascript" src="oscilloscope.js"></script>
+        <script type="text/javascript" src="color.js"></script>
+
+        <script>
+            function sleep(ms) {
+              return new Promise((resolve) => setTimeout(resolve, ms));
+            }
+
+            window.onload = function(){
+                    color = new Color();
+                    nextColor = new Color();
+                    colorChangeLength = 1000;
+                    console.log(color.ToString());
+                    console.log(nextColor.ToString());
+
+                    var lastTime = 0;
+                    var vendors = ['ms', 'moz', 'webkit', 'o'];
+                    for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                        window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+                    }
+
+                    if (!window.requestAnimationFrame) window.requestAnimationFrame = function (callback, element) {
+                        var currTime = new Date().getTime();
+                        var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                        var id = window.setTimeout(function () {
+                            callback(currTime + timeToCall);
+                        },
+                        timeToCall);
+                        lastTime = currTime + timeToCall;
+                        return id;
+                    };
+
+                    if (!window.cancelAnimationFrame) window.cancelAnimationFrame = function (id) {
+                        clearTimeout(id);
+                    };
+
+
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d");
+                canvas.width = size.width;
+                canvas.height = size.height + 200;
+                ctx.lineCap = "round";
+                ctx.lineWidth = 1;
+
+
+                drawLayer(points);
+                //animate(points);
+
+                function drawLayer(){
+                        sleep(10).then(() =>{
+
+                        if (t % colorChangeLength == 0){
+                            nextColor = new Color();
+                        }
+
+                        var temp = t % colorChangeLength;
+                        color.r = Math.round(approach(nextColor.r, temp, color.r, colorChangeLength));
+                        color.g = Math.round(approach(nextColor.g, temp, color.g, colorChangeLength));
+                        color.b = Math.round(approach(nextColor.b, temp, color.b, colorChangeLength));
+                        console.log(color.ToString());
+
+                        ctx.strokeStyle = color.ToString();
+
+                        if(t%2 ==0){
+                            ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        }
+                        points = update();
+                        ctx.beginPath();
+                        ctx.moveTo(points[0].x, points[0].y);
+                        for(var i = 1; i < points.length; i++){
+                            ctx.lineTo(points[i].x, points[i].y);
+                        }
+                        ctx.stroke();
+
+
+                        requestAnimationFrame(drawLayer);
+
+                    });
+
+
+                }
+            }
+        </script>
+        <style>
+                body{
+                        background-color: black;
+                }
+        </style>
+</head>
+<body>
+<canvas id="canvas" width=500px height=500px></canvas>
+</body>
+</html>
