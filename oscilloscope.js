@@ -55,7 +55,7 @@ var incr = (2 * Math.PI)/360;
 
 function update(){
     t++;
-    points = hypotrochoid(new Point(size.width/2, 120+ size.height/2), size.width/4, size.height/3,  t);
+    points = innerCircles(new Point(size.width/2, 120+ size.height/2), size.width/4, size.height/3,  t);
 
     return points;
 }
@@ -80,11 +80,11 @@ function figureOscillations(center, radius, diff, oscillations, shift){
     return points;
 }
 
-function innerCircles(center, radius, diff, oscillations, shift){
-    // radius = baseRadius +  30 * Math.sin(t/300 * incr);
-    diff = baseDiff - 74 * Math.sin(t/150 * incr);
+function innerCircles(center, radius, something, shift){
+    radius = baseRadius +  30 * Math.sin(t/300 * incr);
+    diff = baseDiff - 30 * Math.sin(t/150 * incr);
 
-    //oscillations = baseOscillations + (20 * Math.sin(t/40 * incr));
+    oscillations = baseOscillations + (20 * Math.sin(t/40 * incr));
     var points = [];
     var cosShift = Math.cos(shift);
     var sinShift = Math.sin(shift);
