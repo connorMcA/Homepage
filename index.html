@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/index.css" rel="stylesheet" />
 	<title>Connor McAullife Homepage</title>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
@@ -9,74 +9,77 @@
 </head>
 <body scroll="no" style="overflow:hidden;">
 <div class="titlePage">
-        <h1 class="title">CONNOR MCAULIFFE</h1>
-        <div class="Newleft" >
-                <ul id="left">
-                        <li><a onclick="changeRight('aboutMe')">About Me</a></li>
-                        <li><a onclick="changeRight('projects')">Projects</a><li>
-                        <li><a onclick="changeRight('skills')">Skills</a></li>
-                        <li><a href="media/Resume.pdf">Resume</a></li>
-                        <li><a onclick="changeRight('contactMe')">Contact Me</a></li>
+
+    <img class="profilePic" src="media/connor.jpg" alt="a pic of me" width="150" height="150"/>
+    <h1 class="title">CONNOR MCAULIFFE</h1>
+    <div class="LeftMenu" >
+        <ul id="left">
+            <li><a onclick="changeRight('aboutMe')">About Me</a></li>
+            <li><a onclick="changeRight('projects')">Projects</a><li>
+            <li><a onclick="changeRight('skills')">Skills</a></li>
+            <li><a href="media/Resume.pdf">Resume</a></li>
+            <li><a onclick="changeRight('contactMe')">Contact Me</a></li>
+        </ul>
+
+        <div class="medialink">
+            <a class="notUnderline" href="https://www.linkedin.com/in/connor-mcauliffe/"><img src="media/LinkedIn-Logo.png" alt="linkedIn"/></a>
+            <a class="notUnderline" href="https://github.com/connorMcA"><img src="media/github-logo.png" alt="GitHub"/></a>
+            <a class="notUnderline" href="https://soundcloud.com/sam-ein"><img src="media/soundcloud-logo.png" alt="soundcloud" /></a>
+        </div>
+    </div>
+
+    <div class="RightMenu" id="right">
+        <div id="aboutMe" class="show">
+            <h2>About Me</h2>
+            <p>I am currently a fourth year Computer Science student at Rochester Institute of Technology.
+                 One of my passions is helping others and programming gives me the opportunity to help many people.
+                 Whether that means developing tools and libraries for other developers to use or designing software
+                 that makes the end user's life a little simpler, I strive to make it easier for others
+                 to go after their own passions.</p>
+
+            <p>Another passion I have is for the arts. Art provides a way to express
+                ideas and emotions in a way that language is sometimes incapable of. Personally I
+                like exploring the art of patterns, repetition, and minimalism. The works of
+                 Philip Glass and Steve Reich have influenced me both as a musician and
+                 as a person. There can be just as much said with little statements as with
+                big movements.</p>
+        </div>
+
+        <div id="projects" class="hidden">
+            <h2>Projects</h2>
+            <ul>
+                <li><a class="project" href="oscilloscope.html">Oscilloscope</a></li>
+                <li><a class="project" href="QdUp.html">Q'dUp Android App</a></li>
+                <li><a class="project" href="dachshund/index.html">Dachshund Racing</a></li>
+                <li><a class="project" href="asteroids.html">Asteroids</a></li>
+            </ul>
+        </div>
+
+        <div id="skills" class="hidden">
+            <h2>Skills</h2>
+            <div class="mainlists" id="list">
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>C#</li>
+                    <li>HTML5 / CSS3</li>
+                    <li>Javascript</li>
+                    <li>MIPS Assembly</li>
+                    <li>Git</li>
+                    <li>SQL</li>
                 </ul>
+            </div>
         </div>
 
-        <div class="fullRight" id="right">
-            <div id="aboutMe" class="show">
-                    <img class="profilePic" src="media/connor.jpg" alt="a pic of me" width="150" height="150"/>
-                    <h2>About Me</h2>
-                    <p>I am currently a third year Computer Science Major at Rochester Institute of Technology. A big passion of mine is coding. One thing I love about coding is that it acts as a tool to solve puzzles. But more than that, each person has a unique way to approach and solve the problem. Code provides a way to express creativity while also providing a solution to a problem.</p>
-
-                    <div class="medialink">
-                            <a class="notUnderline" href="https://www.linkedin.com/in/connor-mcauliffe/"><img src="media/LinkedIn-Logo.png" alt="linkedIn"/></a>
-                            <a class="notUnderline" href="https://www.facebook.com/connor.mcauliffe.3"><img src="media/fb-logo.png" alt="facebook"/></a>
-                            <a class="notUnderline" href="https://soundcloud.com/sam-ein"><img src="media/soundcloud-logo.png" alt="soundcloud" /></a>
-
-                    </div>
-            </div>
-
-            <div id="projects" class="hidden">
-                    <h2>Projects</h2>
-                    <ul>
-                            <li><a class="project" href="QdUp.html">Q'dUp Android App</a></li>
-                            <li><a class="project" href="dachshund/index.html">Dachshund Racing</a></li>
-                            <li><a class="project" href="asteroids.html">Asteroids</a></li>
-                            <li><a class="project" href="https://www.github.com/connorMcA">My GitHub</a></li>
-                    </ul>
-            </div>
-
-            <div id="skills" class="hidden">
-                    <h2>Skills</h2>
-                    <div class="mainlists" id="list">
-                            <ul>
-                                    <li>Python</li>
-                                    <li>Java</li>
-                                    <li>HTML5 / CSS3</li>
-                                    <li>C/C++</li>
-                                    <li>C#</li>
-                                <li>MIPS Assembly</li>
-                                <li>Git</li>
-                                <li>SQL</li>
-                                <li>Object Oriented Programming</li>
-                            </ul>
-                    </div>
-            </div>
-
-            <div id="contactMe" class="hidden">
-                        <h2>Contact Me</h2>
-
-                        <h4>Email:</h4>
-
-                        <p id="email" onclick="go_to_link('mail')">cxm4176@g.rit.edu</p>
-
-                        <h4>Phone:</h4>
-
-                        <p>224-325-6933</p>
-
-
-            </div>
-
+        <div id="contactMe" class="hidden">
+            <h2>Contact Me</h2>
+            <h4>Email:</h4>
+            <p id="email" onclick="go_to_link('mail')">cxm4176@g.rit.edu</p>
+            <h4>Phone:</h4>
+            <p>224-325-6933</p>
         </div>
+    </div>
 </div>
-
 </body>
 </html>

@@ -1,0 +1,93 @@
+html{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(../media/grafitti.jpg);
+    min-height: 1000px;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    font-size: 12pt;
+    font-family: helvetica, "Trebuchet MS";
+    overflow: hidden;
+
+}
+
+.center{
+    width: 60vw;
+    position:absolute;
+    top: 0%;
+    left: 5vw;
+    height: 0;
+    display: inline-block;
+    border-right: 15vw solid transparent;
+    border-left: 15vw solid transparent;
+    border-bottom: 100vh solid #000;
+    padding-left: 15px;
+
+}
+
+p{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 50vw;
+}
+
+.section{
+    height: 320px;
+    padding-bottom: 30px;
+}
+
+.content{
+    margin-top: 5vh;
+}
+
+.video{
+    margin-left: 20px;
+    float: right;
+    width:560px;
+    height: 315px;
+    border: 1px solid #101010;
+
+}
+
+.sample{
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #101010;
+
+}
+
+a{
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 20px;
+    position:relative;
+    text-decoration: none;
+    color: white;
+    font-size: 12pt;
+}
+
+a:before{
+    content:"";
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+}
+a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
